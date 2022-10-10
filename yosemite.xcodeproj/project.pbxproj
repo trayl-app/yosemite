@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B63853AD28F45A15007EADB0 /* RestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63853AC28F45A15007EADB0 /* RestService.swift */; };
+		B63853B028F45AB4007EADB0 /* RestServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63853AF28F45AB4007EADB0 /* RestServiceProtocol.swift */; };
+		B63853B328F45B4D007EADB0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63853B228F45B4D007EADB0 /* User.swift */; };
 		B6F66CA928F4169D008F795E /* yosemiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F66CA828F4169D008F795E /* yosemiteApp.swift */; };
 		B6F66CAD28F4169E008F795E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F66CAC28F4169E008F795E /* Assets.xcassets */; };
 		B6F66CB028F4169E008F795E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F66CAF28F4169E008F795E /* Preview Assets.xcassets */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B63853AC28F45A15007EADB0 /* RestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestService.swift; sourceTree = "<group>"; };
+		B63853AF28F45AB4007EADB0 /* RestServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceProtocol.swift; sourceTree = "<group>"; };
+		B63853B228F45B4D007EADB0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B6F66CA528F4169D008F795E /* yosemite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yosemite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F66CA828F4169D008F795E /* yosemiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yosemiteApp.swift; sourceTree = "<group>"; };
 		B6F66CAC28F4169E008F795E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +40,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B63853AB28F459FA007EADB0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B63853AE28F45A9B007EADB0 /* RestService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B63853AE28F45A9B007EADB0 /* RestService */ = {
+			isa = PBXGroup;
+			children = (
+				B63853AC28F45A15007EADB0 /* RestService.swift */,
+				B63853AF28F45AB4007EADB0 /* RestServiceProtocol.swift */,
+			);
+			path = RestService;
+			sourceTree = "<group>";
+		};
+		B63853B128F45B41007EADB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B63853B228F45B4D007EADB0 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B6F66C9C28F4169C008F795E = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +84,8 @@
 		B6F66CA728F4169D008F795E /* yosemite */ = {
 			isa = PBXGroup;
 			children = (
+				B63853B128F45B41007EADB0 /* Model */,
+				B63853AB28F459FA007EADB0 /* Service */,
 				B6F66CB728F428DE008F795E /* View */,
 				B6F66CB628F428CD008F795E /* ViewModel */,
 				B6F66CA828F4169D008F795E /* yosemiteApp.swift */,
@@ -157,8 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F66CB928F42962008F795E /* HomeView.swift in Sources */,
+				B63853B028F45AB4007EADB0 /* RestServiceProtocol.swift in Sources */,
+				B63853B328F45B4D007EADB0 /* User.swift in Sources */,
 				B6F66CA928F4169D008F795E /* yosemiteApp.swift in Sources */,
 				B6F66CBB28F4297A008F795E /* HomeViewModel.swift in Sources */,
+				B63853AD28F45A15007EADB0 /* RestService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

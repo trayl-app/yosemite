@@ -5,7 +5,12 @@ struct HomeView: View {
     @EnvironmentObject private var vm: HomeViewModel
     
     var body: some View {
-        Text(vm.welcome)
+        Button {
+            vm.createUser()
+        } label: {
+            Text("Create User")
+        }
+
     }
 }
 
