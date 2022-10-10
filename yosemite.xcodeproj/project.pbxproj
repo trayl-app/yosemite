@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		B6F66CA928F4169D008F795E /* yosemiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F66CA828F4169D008F795E /* yosemiteApp.swift */; };
-		B6F66CAB28F4169D008F795E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F66CAA28F4169D008F795E /* ContentView.swift */; };
 		B6F66CAD28F4169E008F795E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F66CAC28F4169E008F795E /* Assets.xcassets */; };
 		B6F66CB028F4169E008F795E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F66CAF28F4169E008F795E /* Preview Assets.xcassets */; };
+		B6F66CB928F42962008F795E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F66CB828F42962008F795E /* HomeView.swift */; };
+		B6F66CBB28F4297A008F795E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F66CBA28F4297A008F795E /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B6F66CA528F4169D008F795E /* yosemite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yosemite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F66CA828F4169D008F795E /* yosemiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yosemiteApp.swift; sourceTree = "<group>"; };
-		B6F66CAA28F4169D008F795E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B6F66CAC28F4169E008F795E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6F66CAF28F4169E008F795E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6F66CB828F42962008F795E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B6F66CBA28F4297A008F795E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		B6F66CA728F4169D008F795E /* yosemite */ = {
 			isa = PBXGroup;
 			children = (
+				B6F66CB728F428DE008F795E /* View */,
+				B6F66CB628F428CD008F795E /* ViewModel */,
 				B6F66CA828F4169D008F795E /* yosemiteApp.swift */,
-				B6F66CAA28F4169D008F795E /* ContentView.swift */,
 				B6F66CAC28F4169E008F795E /* Assets.xcassets */,
 				B6F66CAE28F4169E008F795E /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				B6F66CAF28F4169E008F795E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6F66CB628F428CD008F795E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B6F66CBA28F4297A008F795E /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B6F66CB728F428DE008F795E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6F66CB828F42962008F795E /* HomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6F66CAB28F4169D008F795E /* ContentView.swift in Sources */,
+				B6F66CB928F42962008F795E /* HomeView.swift in Sources */,
 				B6F66CA928F4169D008F795E /* yosemiteApp.swift in Sources */,
+				B6F66CBB28F4297A008F795E /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
