@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60BA7FB28F47B6800012740 /* ReusableButton in Frameworks */ = {isa = PBXBuildFile; productRef = B60BA7FA28F47B6800012740 /* ReusableButton */; };
 		B63853AD28F45A15007EADB0 /* RestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63853AC28F45A15007EADB0 /* RestService.swift */; };
 		B63853B028F45AB4007EADB0 /* RestServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63853AF28F45AB4007EADB0 /* RestServiceProtocol.swift */; };
 		B63853B328F45B4D007EADB0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63853B228F45B4D007EADB0 /* User.swift */; };
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60BA7FB28F47B6800012740 /* ReusableButton in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +137,9 @@
 			dependencies = (
 			);
 			name = yosemite;
+			packageProductDependencies = (
+				B60BA7FA28F47B6800012740 /* ReusableButton */,
+			);
 			productName = yosemite;
 			productReference = B6F66CA528F4169D008F795E /* yosemite.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +168,9 @@
 				Base,
 			);
 			mainGroup = B6F66C9C28F4169C008F795E;
+			packageReferences = (
+				B60BA7F928F47B6800012740 /* XCRemoteSwiftPackageReference "civetta" */,
+			);
 			productRefGroup = B6F66CA628F4169D008F795E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -395,6 +403,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B60BA7F928F47B6800012740 /* XCRemoteSwiftPackageReference "civetta" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/trayl-app/civetta.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B60BA7FA28F47B6800012740 /* ReusableButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B60BA7F928F47B6800012740 /* XCRemoteSwiftPackageReference "civetta" */;
+			productName = ReusableButton;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B6F66C9D28F4169C008F795E /* Project object */;
 }

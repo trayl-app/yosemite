@@ -1,16 +1,14 @@
 import SwiftUI
+import ReusableButton
 
 struct HomeView: View {
     
     @EnvironmentObject private var vm: HomeViewModel
     
     var body: some View {
-        Button {
+        ReusableButton {
             vm.createUser()
-        } label: {
-            Text("Create User")
         }
-
     }
 }
 
