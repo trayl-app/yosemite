@@ -1,2 +1,2 @@
-# yosemite
+# Yosemite
 iOS client app
