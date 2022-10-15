@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B60BA7FB28F47B6800012740 /* ReusableButton in Frameworks */ = {isa = PBXBuildFile; productRef = B60BA7FA28F47B6800012740 /* ReusableButton */; };
+		B63853AD28F45A15007EADB0 /* RestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63853AC28F45A15007EADB0 /* RestService.swift */; };
+		B63853B028F45AB4007EADB0 /* RestServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63853AF28F45AB4007EADB0 /* RestServiceProtocol.swift */; };
+		B63853B328F45B4D007EADB0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63853B228F45B4D007EADB0 /* User.swift */; };
+		B6D11C4D28FADA7800A560BF /* FirebaseAuthService in Frameworks */ = {isa = PBXBuildFile; productRef = B6D11C4C28FADA7800A560BF /* FirebaseAuthService */; };
+		B6EFCD7828FACDDC0026AABF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6EFCD7728FACDDC0026AABF /* GoogleService-Info.plist */; };
+		B6F66CA928F4169D008F795E /* yosemiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F66CA828F4169D008F795E /* yosemiteApp.swift */; };
+		B6F66CAD28F4169E008F795E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F66CAC28F4169E008F795E /* Assets.xcassets */; };
+		B6F66CB028F4169E008F795E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F66CAF28F4169E008F795E /* Preview Assets.xcassets */; };
+		B6F66CB928F42962008F795E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F66CB828F42962008F795E /* HomeView.swift */; };
+		B6F66CBB28F4297A008F795E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F66CBA28F4297A008F795E /* HomeViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B63853AC28F45A15007EADB0 /* RestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestService.swift; sourceTree = "<group>"; };
+		B63853AF28F45AB4007EADB0 /* RestServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceProtocol.swift; sourceTree = "<group>"; };
+		B63853B228F45B4D007EADB0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B6EFCD7728FACDDC0026AABF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6F66CA528F4169D008F795E /* yosemite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yosemite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F66CA828F4169D008F795E /* yosemiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yosemiteApp.swift; sourceTree = "<group>"; };
+		B6F66CAC28F4169E008F795E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6F66CAF28F4169E008F795E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6F66CB828F42962008F795E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B6F66CBA28F4297A008F795E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6F66CA228F4169C008F795E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60BA7FB28F47B6800012740 /* ReusableButton in Frameworks */,
+				B6D11C4D28FADA7800A560BF /* FirebaseAuthService in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B63853AB28F459FA007EADB0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B63853AE28F45A9B007EADB0 /* RestService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B63853AE28F45A9B007EADB0 /* RestService */ = {
+			isa = PBXGroup;
+			children = (
+				B63853AC28F45A15007EADB0 /* RestService.swift */,
+				B63853AF28F45AB4007EADB0 /* RestServiceProtocol.swift */,
+			);
+			path = RestService;
+			sourceTree = "<group>";
+		};
+		B63853B128F45B41007EADB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B63853B228F45B4D007EADB0 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6EFCD6E28FACC170026AABF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6F66C9C28F4169C008F795E = {
+			isa = PBXGroup;
+			children = (
+				B6F66CA728F4169D008F795E /* yosemite */,
+				B6F66CA628F4169D008F795E /* Products */,
+				B6EFCD6E28FACC170026AABF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6F66CA628F4169D008F795E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6F66CA528F4169D008F795E /* yosemite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6F66CA728F4169D008F795E /* yosemite */ = {
+			isa = PBXGroup;
+			children = (
+				B63853B128F45B41007EADB0 /* Model */,
+				B63853AB28F459FA007EADB0 /* Service */,
+				B6F66CB728F428DE008F795E /* View */,
+				B6F66CB628F428CD008F795E /* ViewModel */,
+				B6F66CA828F4169D008F795E /* yosemiteApp.swift */,
+				B6F66CAC28F4169E008F795E /* Assets.xcassets */,
+				B6EFCD7728FACDDC0026AABF /* GoogleService-Info.plist */,
+				B6F66CAE28F4169E008F795E /* Preview Content */,
+			);
+			path = yosemite;
+			sourceTree = "<group>";
+		};
+		B6F66CAE28F4169E008F795E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B6F66CAF28F4169E008F795E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6F66CB628F428CD008F795E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B6F66CBA28F4297A008F795E /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B6F66CB728F428DE008F795E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6F66CB828F42962008F795E /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6F66CA428F4169C008F795E /* yosemite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6F66CB328F4169E008F795E /* Build configuration list for PBXNativeTarget "yosemite" */;
+			buildPhases = (
+				B6F66CA128F4169C008F795E /* Sources */,
+				B6F66CA228F4169C008F795E /* Frameworks */,
+				B6F66CA328F4169C008F795E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yosemite;
+			packageProductDependencies = (
+				B60BA7FA28F47B6800012740 /* ReusableButton */,
+				B6D11C4C28FADA7800A560BF /* FirebaseAuthService */,
+			);
+			productName = yosemite;
+			productReference = B6F66CA528F4169D008F795E /* yosemite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6F66C9D28F4169C008F795E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					B6F66CA428F4169C008F795E = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B6F66CA028F4169C008F795E /* Build configuration list for PBXProject "yosemite" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6F66C9C28F4169C008F795E;
+			packageReferences = (
+				B60BA7F928F47B6800012740 /* XCRemoteSwiftPackageReference "civetta" */,
+				B6D11C4B28FADA7800A560BF /* XCRemoteSwiftPackageReference "serva" */,
+			);
+			productRefGroup = B6F66CA628F4169D008F795E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6F66CA428F4169C008F795E /* yosemite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6F66CA328F4169C008F795E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F66CB028F4169E008F795E /* Preview Assets.xcassets in Resources */,
+				B6F66CAD28F4169E008F795E /* Assets.xcassets in Resources */,
+				B6EFCD7828FACDDC0026AABF /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6F66CA128F4169C008F795E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F66CB928F42962008F795E /* HomeView.swift in Sources */,
+				B63853B028F45AB4007EADB0 /* RestServiceProtocol.swift in Sources */,
+				B63853B328F45B4D007EADB0 /* User.swift in Sources */,
+				B6F66CA928F4169D008F795E /* yosemiteApp.swift in Sources */,
+				B6F66CBB28F4297A008F795E /* HomeViewModel.swift in Sources */,
+				B63853AD28F45A15007EADB0 /* RestService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B6F66CB128F4169E008F795E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6F66CB228F4169E008F795E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6F66CB428F4169E008F795E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"yosemite/Preview Content\"";
+				DEVELOPMENT_TEAM = 447465W9D8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.development.yosemite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6F66CB528F4169E008F795E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"yosemite/Preview Content\"";
+				DEVELOPMENT_TEAM = 447465W9D8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.development.yosemite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6F66CA028F4169C008F795E /* Build configuration list for PBXProject "yosemite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F66CB128F4169E008F795E /* Debug */,
+				B6F66CB228F4169E008F795E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6F66CB328F4169E008F795E /* Build configuration list for PBXNativeTarget "yosemite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F66CB428F4169E008F795E /* Debug */,
+				B6F66CB528F4169E008F795E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B60BA7F928F47B6800012740 /* XCRemoteSwiftPackageReference "civetta" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/trayl-app/civetta.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+		B6D11C4B28FADA7800A560BF /* XCRemoteSwiftPackageReference "serva" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/trayl-app/serva.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B60BA7FA28F47B6800012740 /* ReusableButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B60BA7F928F47B6800012740 /* XCRemoteSwiftPackageReference "civetta" */;
+			productName = ReusableButton;
+		};
+		B6D11C4C28FADA7800A560BF /* FirebaseAuthService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6D11C4B28FADA7800A560BF /* XCRemoteSwiftPackageReference "serva" */;
+			productName = FirebaseAuthService;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B6F66C9D28F4169C008F795E /* Project object */;
+}
